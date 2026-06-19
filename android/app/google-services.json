@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1005241337196",
+    "project_id": "quickbite-28d6b",
+    "storage_bucket": "quickbite-28d6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005241337196:android:aca826d64b1904d3e9df49",
+        "android_client_info": {
+          "package_name": "com.example.food_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJLbJOXDIua_izhPxf38vKUb6QsHjjwxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

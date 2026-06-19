@@ -320,8 +320,7 @@ class CartScreen extends StatelessWidget {
     final orderDelivery = cart.deliveryFee;
     final orderTax = cart.tax;
 
-    // Clear cart
-    cart.clearCart();
+    
 
     // Navigate to bill — pushReplacement so Back doesn't return to cart
     Navigator.push(
@@ -336,12 +335,5 @@ class CartScreen extends StatelessWidget {
         ),
       ),
     );
-
-
-    context.read<OrderProvider>().addOrder(
-  id:        'QB${DateTime.now().millisecondsSinceEpoch.toString().substring(7)}',
-  total:     orderTotal,
-  itemCount: orderItems.length,
-);
   }
 }

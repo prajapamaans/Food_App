@@ -41,6 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     if (mounted) {
       setState(() => _isLoading = false);
+
       if (authProvider.isAuthenticated) {
         Navigator.pushReplacement(
           context,
@@ -48,15 +49,10 @@ class _LoginScreenState extends State<LoginScreen> {
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text(
-              'Account not found or token mismatch. Please register.',
-            ),
+          SnackBar(
+            content: Text(authProvider.error ?? 'Login failed. Try again.'),
+            backgroundColor: Colors.red,
           ),
-        );
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const RegisterScreen()),
         );
       }
     }
